@@ -1,3 +1,7 @@
+# About
+
+This project is an editted version for Angular Expansion Panel with disabled title click and open.
+
 # AngularKcggqm
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
