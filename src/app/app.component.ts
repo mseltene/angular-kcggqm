@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-kcggqm';
+  infoText = `
+    Custom Angular Expansion Panel with Disabled click and expand on the title area.
+  `;
 }

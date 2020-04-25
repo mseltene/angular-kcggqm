@@ -1,0 +1,46 @@
+<div class="example-container">
+  <mat-accordion class="example-headers-align">
+
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" [disabled]="true">
+      <mat-expansion-panel-header style="color: #222222">
+        <mat-panel-title>Title 0</mat-panel-title>
+        <mat-panel-description style="color: #999999">Description 0</mat-panel-description>
+      </mat-expansion-panel-header>
+      Content 0
+      <mat-action-row>
+        <button mat-button color="primary" (click)="nextStep()">Next</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" [disabled]="true">
+      <mat-expansion-panel-header style="color: #222222">
+        <mat-panel-title>Title 1</mat-panel-title>
+        <mat-panel-description style="color: #999999">Description 1</mat-panel-description>
+      </mat-expansion-panel-header>
+      Content 1
+      <mat-action-row>
+        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+        <button mat-button color="primary" (click)="nextStep()">Next</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" [disabled]="true">
+      <mat-expansion-panel-header style="color: #222222">
+        <mat-panel-title>Title 2</mat-panel-title>
+        <mat-panel-description style="color: #999999">Description 2</mat-panel-description>
+      </mat-expansion-panel-header>
+      Content 2
+      <mat-action-row>
+        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+        <button mat-button color="primary" (click)="nextStep()">Submit</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+
+
+  <div class="reset-button">
+    <button mat-raised-button color="primary" (click)="step = 0">RESET</button>
+  </div>
+
+</div>
